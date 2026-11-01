@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>bytebattle</title>
+
+		<style>
+			.benefits-list {
+				list-style: none;
+			}
+
+			.benefits-header {
+				display: flex;
+				align-items: center;
+				gap: 16px;
+			}
+
+			.benefits-header h3 {
+				margin: 0;
+			}
+
+			.form {
+				width: 300px;
+				display: flex;
+				flex-direction: column;
+				row-gap: 8px;
+
+				margin-bottom: 16px;
+			}
+			.form-field {
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			Note:
+			I found the project requirements somewhat unclear and underexplained. Since only screenshots were provided without detailed specifications regarding semantics, navigation behavior, button functionality, or intended user flows, I made several implementation decisions based on what I believe to be the most appropriate semantic HTML structure.
+
+			Some elements, particularly certain navigation links and buttons, do not have an obvious purpose based on the provided design alone. Because their intended behavior was not specified, I implemented them according to what seemed most logical from a usability and semantic perspective.
+
+			If additional requirements or functionality were intended, those details were not apparent from the screenshots, so this implementation represents my best interpretation of the assignment.
+		-->
+
+		<header style="display: flex; justify-content: space-between; align-items: center">
+			<div style="display: flex; align-items: center; gap: 8px">
+				<a href=""><img src="assets/logo.svg" alt="CLA logo" width="32px" /></a>
+				<p><b>CodeCLA</b></p>
+			</div>
+
+			<nav style="display: flex; gap: 8px">
+				<a href="#coders">For coders</a>
+				<a href="#managers">For developers</a>
+				<a href="signup.html">Join now</a>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>The Place for Cometitive Programmers</h1>
+				<p>
+					CodeCLA is where programmers participate in programming contests, solve algorithm and data structure challenges and become part of
+					an awesome community.
+				</p>
+				<button>Become a coder</button>
+				<button>Become a manager</button>
+			</section>
+			<section>
+				<h2>Practice to level-up</h2>
+				<ul>
+					<li>1K Problems for practice</li>
+					<li>100+ Coders</li>
+					<li>10 Programming languages</li>
+					<li>130K Submissions</li>
+				</ul>
+			</section>
+
+			<section id="coders">
+				<h2>What you will gain</h2>
+				<p>You are a coder who wants to level-up his skills in coding an problem solving? Here is what we provide.</p>
+
+				<ul class="benefits-list">
+					<li>
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Rich practice set of problem</h3>
+						</div>
+
+						<p style="margin-left: 40px">Access a rich library of practice, algorithms, and data structure to enhance your skills.</p>
+					</li>
+
+					<li>
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Universal contests</h3>
+						</div>
+
+						<p style="margin-left: 40px">Compete in regularly scheduled contests against talent from around the globe.</p>
+					</li>
+
+					<li>
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Constant feedback</h3>
+						</div>
+
+						<p style="margin-left: 40px">Receive personalized insights and feedback to improve your problem-solving abilities.</p>
+					</li>
+
+					<li>
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Sharing is caring</h3>
+						</div>
+
+						<p style="margin-left: 40px">Connect with like-minded individuals, form teams, and tackle challenges together.</p>
+					</li>
+
+					<li>
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Track your progress and climb the ranks on our leaderboard</h3>
+						</div>
+					</li>
+
+					<li style="margin-top: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Detailed solution for problems</h3>
+						</div>
+					</li>
+				</ul>
+
+				<button>Join coders community</button>
+			</section>
+
+			<section id="managers">
+				<h2>Acces high-professional platform for coding challenges design</h2>
+
+				<ul class="benefits-list">
+					<li style="margin-bottom: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Craft tailored coding challenges suited to your needs and objectives</h3>
+						</div>
+					</li>
+
+					<li style="margin-bottom: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Design challenges that align perfectly with your recruitment criteria</h3>
+						</div>
+					</li>
+
+					<li style="margin-bottom: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Choose from a wide range of problem types including algorithmic, data structures, puzzles, and more.</h3>
+						</div>
+					</li>
+
+					<li style="margin-bottom: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Ergibinuc tools for challenges design</h3>
+						</div>
+					</li>
+
+					<li style="margin-bottom: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Collaborate with colleagues or peers in creating and refining coding challenges</h3>
+						</div>
+					</li>
+
+					<li style="margin-bottom: 16px">
+						<div class="benefits-header">
+							<img src="assets/ok.svg" alt="check logo" />
+							<h3>Access dedicated support from our team of experts</h3>
+						</div>
+					</li>
+				</ul>
+
+				<button>Join managers community</button><br />
+				<img style="width: 500px; margin-top: 16px" src="assets/team.svg" alt="Team at thair notebooks" />
+			</section>
+
+			<section>
+				<div style="display: flex; align-items: center; gap: 8px">
+					<img width="32px" src="assets/logo.svg" alt="CLA logo" />
+					<h2>Brought to you by CLA</h2>
+				</div>
+				<p>Join the Ultimate Hub for Competitive Programmers and reach growth and excellence in competitive programming.</p>
+
+				<p>Coding challenges is made simple by our platform. Access a dashboard of tools for high-quality challenge design.</p>
+			</section>
+
+			<section>
+				<h2>Testimonials</h2>
+
+				<article>
+					<p>This guy is an amazing frontend developer that delivered the task exactly how we need it...</p>
+
+					<figcaption>
+						<img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Portrait of June Cha" />
+						<figure>
+							<b>June Cha</b> <br />
+							Software Engineer
+						</figure>
+					</figcaption>
+				</article>
+
+				<button>Previous</button>
+				<button>Next</button>
+			</section>
+			<section id="contact">
+				<h2>Contact us</h2>
+
+				<form class="form" action="">
+					<div class="form-field">
+						<label for="name">Name</label>
+						<input id="name" type="text" name="name" placeholder="Your Name" required />
+					</div>
+					<div class="form-field">
+						<label for="email">Email</label>
+						<input id="email" type="email" name="email" placeholder="Your Email" required />
+					</div>
+					<div class="form-field">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="Your Message" required rows="5"></textarea>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>&COPY; Your Competitive Programming Platform All rights reserved.</footer>
+	</body>
+</html>
